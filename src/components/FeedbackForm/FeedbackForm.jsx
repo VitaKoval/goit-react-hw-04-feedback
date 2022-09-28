@@ -17,9 +17,10 @@ export class FeedbackForm extends React.Component {
   };
 
   countTotalFeedback = options => {
-    return Object.values(options).reduce((acc, option) => {
+    const totalFeedback = Object.values(options).reduce((acc, option) => {
       return acc + option;
     }, 0);
+    return totalFeedback;
   };
 
   countPositiveFeedbackPercentage = ({ good }) =>
