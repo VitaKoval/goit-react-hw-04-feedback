@@ -7,7 +7,6 @@ export const FeedbackOptions = ({ options, onLeaveFeedback }) => {
     <VoiceButton
       type="button"
       key={option}
-      data-voice={option}
       onClick={()=>onLeaveFeedback(option)}
     >
       {option}
